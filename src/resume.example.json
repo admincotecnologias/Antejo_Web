@@ -1,0 +1,148 @@
+{
+    "basics": {
+        "name": "Antejo",
+        "label": "<PROFESSION>",
+        "picture": "/img/antejoBlanco.png",
+        "banner": "/img/banner.jpg",
+        "email": "contacto@antejo.com",
+        "phone": "01-800-DINERO",
+        "website": "www.antejo.com",
+        "summary": [
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed mi cursus, tempor lacus a, pretium leo. Sed a fringilla elit, sed volutpat tortor. Aliquam volutpat dignissim nisi condimentum aliquam. Quisque fermentum ullamcorper imperdiet. Vivamus rhoncus enim a velit convallis pellentesque. Nullam enim urna, tempor vel viverra sed, viverra sit amet turpis. Sed metus turpis, venenatis quis porta ut, suscipit in ante. Aenean posuere neque sit amet mauris cursus dapibus. In id ullamcorper orci, non placerat mauris. Sed ullamcorper lacinia interdum. Nulla in luctus leo. Morbi facilisis dolor ac justo commodo blandit. Sed ac neque in neque rhoncus vestibulum et sit amet ipsum. In iaculis magna egestas quam suscipit, nec imperdiet lorem fermentum. ",
+            "Fusce posuere urna vel est luctus consequat. Maecenas scelerisque quis enim efficitur tempus. Etiam orci velit, congue quis dolor tristique, scelerisque malesuada mauris. Donec interdum, sapien id malesuada efficitur, nunc libero semper metus, vel commodo ligula velit vitae tellus. Integer sagittis nunc urna, eu dignissim nibh hendrerit non. Aliquam vitae tortor quis arcu ultrices sollicitudin sit amet non orci. Maecenas ac mattis diam, sed tristique nibh. Mauris semper id massa at pellentesque. Cras sed aliquam risus. Nunc nisi quam, sodales eget venenatis in, tincidunt a ipsum. Aliquam at libero cursus, pretium sapien nec, ultrices augue. Sed sodales elementum felis non rutrum. Nunc eget mattis nunc. Vivamus libero odio, fringilla vitae facilisis vel, bibendum a tortor. ",
+            "Morbi pulvinar tincidunt ligula, sed varius orci dapibus id. Phasellus non libero vitae felis tincidunt sollicitudin. Nam at lorem nibh. Nam lobortis congue tincidunt. Fusce at luctus sapien. Mauris at gravida eros. Maecenas sollicitudin, massa eget vestibulum consectetur, ante nulla iaculis elit, ut cursus lorem ante non massa. "
+        ],
+        "location": {
+            "address": "Calle X Colonia Y",
+            "postalCode": "12345",
+            "city": "Hermosillo",
+            "countryCode": "HMO",
+            "region": "Mexico"
+        },
+        "profiles": [
+            {
+                "network": "<NETWORK>",
+                "username": "<USERNAME>",
+                "url": "<URL>"
+            }
+        ]
+    },
+    "work": [
+        {
+            "company": "<COMPANY_NAME>",
+            "position": "<POSITION>",
+            "website": "<COMPANY_WEBSITE>",
+            "startDate": "<START_DATE>",
+            "endDate": "<END_DATE>",
+            "summary": "<SUMMARY>",
+            "highlights": [
+                "<HIGHTLIGHT_1>",
+                "<HIGHTLIGHT_2>",
+                "<HIGHTLIGHT_3>"
+            ]
+        }
+    ],
+    "volunteer": [
+        {
+            "organization": "<ORGANIZATION_NAME>",
+            "position": "<POSITION>",
+            "website": "<WEBSITE>",
+            "startDate": "<START_DATE>",
+            "endDate": "<END_DATE>",
+            "summary": "<SUMMARY>",
+            "highlights": [
+                "<HIGHTLIGHT_1>",
+                "<HIGHTLIGHT_2>",
+                "<HIGHTLIGHT_3>"
+            ]
+        }
+    ],
+    "education": [
+        {
+            "institution": "<INSTITUTION_NAME>",
+            "area": "<AREA_OF_STUDY>",
+            "studyType": "<STUDY_TYPE>",
+            "startDate": "<START_DATE>",
+            "endDate": "<END_DATE>",
+            "gpa": "<GRADE_POINT_AVERAGE>",
+            "summary": "<SUMMARY>",
+            "courses": [
+                "<COURSE_1>",
+                "<COURSE_2>",
+                "<COURSE_3>"
+            ]
+        }
+    ],
+    "awards": [
+        {
+            "title": "<AWARD_TITLE>",
+            "date": "<DATE>",
+            "awarder": "<AWARDER>",
+            "summary": "<SUMMARY>"
+        }
+    ],
+    "projects": [
+        {
+            "name": "<PUBLICATION_NAME>",
+            "publisher": "<PUBLISHER>",
+            "category": "<CATEGORY>",
+            "releaseDate": "<RELEASE_DATE>",
+            "website": "<WEBSITE>",
+            "summary": "<SUMMARY>",
+            "image": {
+                "modal": "<MODAL_IMAGE>",
+                "thumb": "<THUMBNAIL_IMAGE>"
+            },
+            "keywords": [
+                "<KEYWORD_1>",
+                "<KEYWORD_2>",
+                "<KEYWORD_3>"
+            ]
+        }
+    ],
+    "skills": [
+        {
+            "title": "<DESCRIPTION_TITLE>",
+            "description": [
+                "<DESCRIPTION_1>",
+                "<DESCRIPTION_2>",
+                "<DESCRIPTION_3>"
+            ],
+            "skillDetails": [
+                {
+                    "name": "<SKILL_NAME>",
+                    "level": "<SKILL_LEVEL>",
+                    "keywords": [
+                        "<KEYWORD_1>",
+                        "<KEYWORD_2>",
+                        "<KEYWORD_3>"
+                    ]
+                }
+            ]
+        }
+    ],
+    "languages": [
+        {
+            "name": "<LANGUAGE_NAME>",
+            "level": "<LANGUAGE_LEVEL>"
+        }
+    ],
+    "interests": [
+        {
+            "name": "<INTEREST_NAME>",
+            "keywords": [
+                "<KEYWORD_1>",
+                "<KEYWORD_2>",
+                "<KEYWORD_3>"
+            ]
+        }
+    ],
+    "references": [
+        {
+            "name": "<Jorge>",
+            "position": "<Practicante>",
+            "company": "<COTECNOLOGIAS>",
+            "reference": "<Esta chido>"
+        }
+    ]
+}
