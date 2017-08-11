@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 class Header2 extends Component{
     constructor(props){
-      console.log("holaHeader");
       super(props)
       this.state = this.getInitialState();
     }
@@ -33,7 +32,8 @@ class Header2 extends Component{
 
     render = function () {
         const style = {
-            height: this.state.window.height
+            height: this.state.window.height,
+            content: this.props.children
         };
         return (
             <header style={style}>

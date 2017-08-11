@@ -8,6 +8,7 @@ class Navigation extends Component{
     }
     render = function () {
         return (
+          <div>
             <nav id='nav-wrap' className='opaque'>
                 <a className='mobile-btn' href='#nav-wrap' title='Show navigation'>Show navigation</a>
                 <a className='mobile-btn' href='#' title='Hide navigation'>Hide navigation</a>
@@ -19,7 +20,10 @@ class Navigation extends Component{
                         );
                     }.bind(this))}
                 </ul>
+
             </nav>
+          </div>
+
         );
     }
 };

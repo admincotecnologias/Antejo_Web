@@ -34,6 +34,7 @@ body {
    height: 100%;
 }
 
+
 .not-found {
    background: #191919;
    color: #fff;
@@ -76,96 +77,109 @@ body {
 /* b. Header Styles
 /* ------------------------------------------------------------------ */
 
-header {
-   position: relative;
-   height: 800px;
-   min-height: 500px;
-   width: 100%;
-   background: #161415 url(../images/background.jpg) no-repeat top center;
-   background-size: cover !important;
-	-webkit-background-size: cover !important;
-   text-align: center;
-   overflow: hidden;
-}
 
-/* vertically center banner section */
-header:before {
-   content: '';
-   display: inline-block;
-   vertical-align: middle;
-   height: 100%;
-}
-header .banner {
-   display: inline-block;
-   vertical-align: middle;
-   margin: 0 auto;
-   width: 85%;
-   padding-bottom: 30px;s
-   text-align: center;
-}
 
-header .banner-text { width: 100%; }
-header .banner-text h1 {
-   font: 90px/1.1em 'opensans-bold', sans-serif;
-   color: #fff;
-   letter-spacing: -2px;
-   margin: 0 auto 18px auto;
-   text-shadow: 0px 1px 3px rgba(0, 0, 0, .8);
-}
-header .banner-text h3 {
-   font: 18px/1.9em 'librebaskerville-regular', serif;
-   color: #A8A8A8;
-   margin: 0 auto;
-   width: 70%;
-   text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
-}
-header .banner-text h3 span,
-header .banner-text h3 a {
-   color: #fff;
-}
-header .banner-text hr {
-   width: 60%;
-   margin: 18px auto 24px auto;
-   border-color: #2F2D2E;
-   border-color: rgba(150, 150, 150, .1);
-}
+@media screen and (min-width: 300px) {
 
-/* header social links */
-header .social {
-   margin: 24px 0;
-   padding: 0;
-   font-size: 30px;
-   text-shadow: 0px 1px 2px rgba(0, 0, 0, .8);
-}
-header .social li {
-   display: inline-block;
-   margin: 0 15px;
-   padding: 0;
-}
-header .social li a { color: #fff; }
-header .social li a:hover { color: #11ABB0; }
+  header {
+    background: url(/img/headerbackground.jpg) no-repeat center center fixed;
+     background-size: cover;
+  }
 
-/* scrolldown link */
-header .scrolldown a {
-   position: absolute;
-   bottom: 30px;
-   left: 50%;
-   margin-left: -29px;
-   color: #fff;
-   display: block;
-   height: 42px;
-   width: 42px;
-   font-size: 42px;
-   line-height: 42px;
-   color: #fff;
-   border-radius: 100%;
+  .widget {
+    border-top: 2px solid rgba(255, 255, 255, .5);
+    border-bottom: 2px solid rgba(255, 255, 255, .5);
+    height: auto;
+    width: auto;
+    overflow: hidden;
+    position: relative;
+  }
 
-   -webkit-transition: all .3s ease-in-out;
-   -moz-transition: all .3s ease-in-out;
-   -o-transition: all .3s ease-in-out;
-   transition: all .3s ease-in-out;
-}
-header .scrolldown a:hover { color: #11ABB0; }
+  /* vertically center banner section */
+  .blur{
+    background: url(/img/headerbackground.jpg)  no-repeat center center fixed;
+    background-size: cover;
+    overflow: hidden;
+    filter: blur(15px);
+    position: absolute;
+    height: 50%;
+    width: auto;
+    top: 250px;
+    left: 0px;
+    right: 0px;
+  }
+
+  header:before {
+     display: inline-block;
+     vertical-align: middle;
+     height: 100%;
+  }
+  header .banner {
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+  header .banner-text {
+     background: url(../img/antejoBlanco.png) no-repeat top center;
+     position: absolute;
+     background-size: contain;
+     margin: auto;
+     height: 30%;
+     width: auto;
+     top: 300px;
+     left: 0px;
+     right: 0px;
+  }
+
+    header .banner-text h3 span,
+    header .banner-text h3 a {
+       color: #fff;
+    }
+    header .banner-text hr {
+       width: 60%;
+       margin: 18px auto 24px auto;
+       border-color: #2F2D2E;
+       border-color: rgba(150, 150, 150, .1);
+    }
+
+  /* header social links */
+  header .social {
+     margin: 24px;
+     padding: 10px;
+     font-size: 30px;
+     text-shadow: 0px 1px 2px rgba(0, 0, 0, .8);
+  }
+  /*header .social li {
+     display: inline-block;
+     margin: 0 15px;
+     padding: 0;
+  }
+  header .social li a { color: #fff; }
+  header .social li a:hover { color: #11ABB0; }*/
+
+  /* scrolldown link */
+  header .scrolldown a {
+     position: absolute;
+     bottom: 30px;
+     left: 50%;
+     margin-left: -29px;
+     color: #fff;
+     display: block;
+     height: 42px;
+     width: 42px;
+     font-size: 42px;
+     line-height: 42px;
+     color: #fff;
+     border-radius: 100%;
+
+     -webkit-transition: all .3s ease-in-out;
+     -moz-transition: all .3s ease-in-out;
+     -o-transition: all .3s ease-in-out;
+     transition: all .3s ease-in-out;
+  }
+  header .scrolldown a:hover { color: #11ABB0; }
+
+  }
 
 /* primary navigation
 --------------------------------------------------------------------- */
@@ -185,6 +199,7 @@ header .scrolldown a:hover { color: #11ABB0; }
    margin: 0 auto;
    z-index: 100;
    position: fixed;
+   background-color: #5f9ea0;
    left: 0;
    top: 0;
 }

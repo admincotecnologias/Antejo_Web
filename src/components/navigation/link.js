@@ -6,15 +6,26 @@ class Link extends Component{
 
   constructor(props){
     super(props);
-    this.scrollAndDontRefresh = this.scrollAndDontRefresh.bind(this);
+    if(this.props.link != 'login'){
+      this.scrollAndDontRefresh = this.scrollAndDontRefresh.bind(this);
+    }
   }
 
   scrollAndDontRefresh(e){   // function scrollAndDontRefresh
-    this.smoothScroll();
-    e.preventDefault();
+      this.smoothScroll();
+      e.preventDefault();
   }
 
     render = function () {
+      if (this.props.link == 'login'){
+        return (
+            <li>
+                  <a href="#/login">
+                    {this.props.name}
+                  </a>
+            </li>
+        );
+      }else{
         return (
             <li id ={this.props.link+"H"}>
                   <a href={'#'} onClick={this.scrollAndDontRefresh}>
@@ -22,6 +33,7 @@ class Link extends Component{
                   </a>
             </li>
         );
+      }
     }
 
      currentYPosition() {

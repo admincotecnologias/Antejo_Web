@@ -26,19 +26,10 @@ function getNavigation() {
         education: 'Education',
         skill: 'Skills',
         portfolio: 'Portfolio',
-        testimonials: 'References'
+        testimonials: 'References',
+        login: 'Login'
     };
 }
-
-
-//var redux = require('redux');
-
-//var reducer = (state = {},action) => {
-//  return state;
-//}
-//var store = redux.createStore(reducer);
-
-//getResumePath();
 
 class Root extends Component{
 
@@ -66,20 +57,9 @@ class Root extends Component{
         </div>
       )
   }
-  /*
-  <About content={resume.basics}/>
-    <Work content={resume.work}/>
-    <Education content={resume.education}/>
-    <Skills content={resume}/>
-  <Portfolio entry={resume.projects} content={Array.from(resume.projects)}/>
-    <References content={resume.references}/>
 
-
-  */
   componentWillMount(){
     this.setState({resume : Resume});
-    //console.log(this.state);
-    //console.log(Resume);
   }
 }
  export default Root

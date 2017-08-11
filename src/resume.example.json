@@ -21,7 +21,7 @@
         },
         "profiles": [
             {
-                "network": "<NETWORK>",
+                "network": "<Facebook>",
                 "username": "<USERNAME>",
                 "url": "<URL>"
             }

@@ -5,14 +5,9 @@ import Header2 from './header.js';
 import Resume from './../resume.example.json';
 import Section from './section/index.js';
 
-
 const request = require('superagent');
-
-
-
 const Banner = require('./banner');
 const ScrollDown = require('./scrolldown');
-
 const Loading = require('./loading');
 
 class Home extends Component{
