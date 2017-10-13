@@ -1,0 +1,30 @@
+<div>
+    <tabset>
+        
+        <tab title="Solicitud">
+            <span *tabHeading>Solicitud</span>
+            <app-registry-sol-m [inputAppData]="data.applications" [inputAppId]="appId" (appDataRefresher)="refreshAppData($event)"></app-registry-sol-m>
+
+        </tab>
+
+        <tab [disabled]="appId==null" title="Avales">
+
+            <span *tabHeading>Avales</span>
+            <div>
+                <p>
+                    <app-aval-m [inputAvalData]="data.avals" (avalDataRefresher)="refreshAvalData($event)"></app-aval-m>
+                </p>
+            </div>
+        </tab>
+
+        <tab [disabled]="appId==null" title="Archivos">
+            <span *tabHeading>Archivos</span>
+            <div>
+                <p>
+                    <app-files-m [inputFileData]="data.files" (fileDataRefresher)="refreshFileData($event)"></app-files-m>
+                </p>
+            </div>
+
+        </tab>
+    </tabset>
+</div>

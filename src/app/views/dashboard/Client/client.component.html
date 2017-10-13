@@ -1,0 +1,33 @@
+<div class="main-page">
+    <div class="row">
+        <div class="col-lg-12 col-sm-12 col-md-12">
+            <div class="card">
+                <div class="card-header">
+                    <h2>Informacion Cliente</h2>
+                </div><br>
+                <div *ngIf="idClient==null">
+                    <div class="btn-group" dropdown>
+                        <button dropdownToggle type="button" class="btn btn-primary dropdown-toggle">
+                                 Seleccione un tipo de Cliente <span class="caret"></span>
+                                </button>
+                        <ul *dropdownMenu class="dropdown-menu" role="menu">
+                            <li role="menuitem"><a (click)='evento_cliente(false)' class="dropdown-item">Fisica</a></li>
+                            <li role="menuitem"><a (click)='evento_cliente(true)' class="dropdown-item">Moral</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div *ngIf="clientType">
+                    <div *ngIf="clientType=='moral';else physicalForm">
+                        <p></p>
+                        <app-info-client-moral [client]="client" (idRefresher)="refreshId($event)"></app-info-client-moral>
+                    </div>
+                    <ng-template #physicalForm>
+                        <p></p>
+                        <app-info-client-physic [client]="client" (idRefresher)="refreshId($event)"></app-info-client-physic>
+                    </ng-template>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
