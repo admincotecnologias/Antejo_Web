@@ -1,3 +1,4 @@
+import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { LoginComponent } from './../ClientDashboard/Login/login.component';
 import { VisionComponent } from './Sections/vision/vision.component';
 import { Component } from '@angular/core';
@@ -36,6 +37,7 @@ export const rootRouting = RouterModule.forChild(rootRoutes);
     ],
     imports: [
         rootRouting,
+        ScrollToModule.forRoot(),
     ]
 })
 export class RootModule { }

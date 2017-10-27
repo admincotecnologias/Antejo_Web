@@ -1,4 +1,28 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
+    <header id="header" class="alt">
+        <div class="logo img-responsive"><a href="menu">Antejo <span>Banca Corporativa</span></a></div>
+        <a href="#menu" class="toggle"><span>Menu</span></a>
+    
+    </header>
+    
+    <!-- Nav -->
+    <nav id="menu">
+        <ul class="links">
+            <li><a routerLink="['/']">Home</a></li>
+            <li><a style="cursor:pointer;" [ngx-scroll-to]="'#about'">Acerca de nosotros</a></li>
+            <li><a style="cursor:pointer;" [ngx-scroll-to]="'#misionvision'">Mision & Vision</a></li>
+    
+        </ul>
+    </nav>
   <router-outlet></router-outlet>
+
+  <!-- Footer -->
+  <footer id="footer" class="wrapper">
+    <div class="inner">
+        <div class="copyright">
+            &copy; Co Tecnologias: <a href="http://www.cotecnologias.com/">Co. Tecnologias</a>.
+        </div>
+    </div>
+  </footer>
 </div>
