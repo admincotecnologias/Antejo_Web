@@ -11,5 +11,8 @@ import { Component } from '@angular/core';
 })
 export class MisionComponent {
     title = 'mision';
+    constructor(){
+        window.scrollTo(0,0);
+    }
 }
 

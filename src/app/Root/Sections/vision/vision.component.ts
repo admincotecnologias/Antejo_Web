@@ -9,5 +9,8 @@ import { Component } from '@angular/core';
 })
 export class VisionComponent {
     title = 'vision';
+    constructor(){
+        window.scrollTo(0,0);
+    }
 }
 

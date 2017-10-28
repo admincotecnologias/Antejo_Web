@@ -1,8 +1,25 @@
 
-<section id="banner" data-video="/assets/images/banner">
+<!-- Nav -->
+
+<header id="header" class="alt">
+    <div class="logo img-responsive"><a [routerLink]="['/home']">Antejo <span>Banca Corporativa</span></a></div>
+    <a href="#menu" class="toggle"><span>Menu</span></a>
+
+</header>
+
+ <!-- Nav -->
+ <nav id="menu">
+    <ul class="links">
+        <li><a [ngx-scroll-to]="'#homeScroll'">Home</a></li>
+        <li><a style="cursor:pointer;" [ngx-scroll-to]="'#about'">Acerca de nosotros</a></li>
+        <li><a style="cursor:pointer;" [ngx-scroll-to]="'#misionvision'">Mision & Vision</a></li>
+
+    </ul>
+</nav>
+<section id="banner" data-video="/assets/images/banner" data-background-video-loop="loop">
     <div class="inner">
         <h1> <img src="/assets/images/antejoBlanco.png" alt="" class="logo-img"></h1>
-        <a [ngx-scroll-to]="'#about'" class="button alt scrolly">Acerca de nosotros</a>
+        <a [ngx-scroll-to]="'#about'" class="button alt">Acerca de nosotros</a>
     </div>
 </section>
 
