@@ -1,28 +1,33 @@
-
 <!-- Nav -->
 
+<!-- 
 <header id="header" class="alt">
     <div class="logo img-responsive"><a [routerLink]="['/home']">Antejo <span>Banca Corporativa</span></a></div>
     <a href="#menu" class="toggle"><span>Menu</span></a>
 
 </header>
+!-->
 
- <!-- Nav -->
- <nav id="menu">
-    <ul class="links">
-        <li><a [ngx-scroll-to]="'#homeScroll'">Home</a></li>
-        <li><a style="cursor:pointer;" [ngx-scroll-to]="'#about'">Acerca de nosotros</a></li>
-        <li><a style="cursor:pointer;" [ngx-scroll-to]="'#misionvision'">Mision & Vision</a></li>
-
+<nav style="background-color: rgba(0,0,0,0.9) !important; color:#dddddd" class="navbar navbar-expand-lg fixed-top justify-content-between ">
+    <img style="width:8em;cursor:pointer" src="/assets/images/antejoBlancoLogo.png" [ngx-scroll-to]="'#homeScroll'">
+    <ul class="navbar-nav mr-auto">
+        <li style="padding: 0 5vw 0 5vw;" class="nav-item">
+            <a class="pull-left" style="cursor:pointer;" [ngx-scroll-to]="'#about'">Acerca de Nosotros</a>
+        </li>
+        <li style="padding: 0 5vw 0 0vw;" class="nav-item">
+            <a class="pull-left" style="cursor:pointer;" [ngx-scroll-to]="'#misionvision'">Mision y Vision</a>
+        </li>
     </ul>
 </nav>
-<section id="banner" data-video="/assets/images/banner" data-background-video-loop="loop">
-    <div class="inner">
-        <h1> <img src="/assets/images/antejoBlanco.png" alt="" class="logo-img"></h1>
-        <a [ngx-scroll-to]="'#about'" class="button alt">Acerca de nosotros</a>
+<section>
+    <div class="inner" style="height:100vh;background-image:url('/assets/images/miniBanner.gif');background-size:cover;">
+        <div style="padding:25vh 20vw 0 20vw;height:100vh;background-color:rgba(0,0,0,.6);">
+            <h1> <img src="/assets/images/antejoBlanco.png" alt="" class="logo-img"></h1>
+            <a [ngx-scroll-to]="'#about'" class="button alt">Acerca de nosotros</a>
+        </div>
     </div>
-</section>
-
+    
+</section> 
 <!-- One -->
 <section id="about" class="wrapper style2">
     <div class="inner">
@@ -33,17 +38,21 @@
 
                     </div>
                 </div>
-                <div class="content" >
+                <div class="content">
                     <header class="align-center">
                         <h2>Acerca de nosotros</h2>
                         <p>maecenas feugiat ex purus, quis volutpat lacus placerat</p>
                     </header>
                     <hr />
-                    <p> Cras aliquet urna ut sapien tincidunt, quis malesuada elit facilisis. Vestibulum sit amet tortor velit. Nam elementum nibh a libero pharetra elementum. Maecenas feugiat ex purus, quis volutpat lacus placerat malesuada. Praesent
-                        in sem ex. Morbi mattis sapien pretium tellus venenatis, at egestas urna ornare.</p>
-                    <p>Vivamus fermentum nibh vel pharetra blandit. Cras a purus urna. Sed et libero ex. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse id hendrerit felis. Nulla viverra tempor dui at
-                        congue. Pellentesque quis nulla ornare, congue nisi id, finibus nulla. Aliquam sit amet hendrerit purus. Donec libero massa, posuere fermentum eros sit amet, maximus fringilla augue. Maecenas at rhoncus lorem. Vivamus ultricies
-                        consequat est, efficitur convallis libero. Vivamus rutrum semper mauris, vitae consequat eros tempor ac. Pellentesque et ornare sapien</p>
+                    <p> Cras aliquet urna ut sapien tincidunt, quis malesuada elit facilisis. Vestibulum sit amet tortor velit.
+                        Nam elementum nibh a libero pharetra elementum. Maecenas feugiat ex purus, quis volutpat lacus placerat
+                        malesuada. Praesent in sem ex. Morbi mattis sapien pretium tellus venenatis, at egestas urna ornare.</p>
+                    <p>Vivamus fermentum nibh vel pharetra blandit. Cras a purus urna. Sed et libero ex. Orci varius natoque
+                        penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse id hendrerit felis.
+                        Nulla viverra tempor dui at congue. Pellentesque quis nulla ornare, congue nisi id, finibus nulla.
+                        Aliquam sit amet hendrerit purus. Donec libero massa, posuere fermentum eros sit amet, maximus fringilla
+                        augue. Maecenas at rhoncus lorem. Vivamus ultricies consequat est, efficitur convallis libero. Vivamus
+                        rutrum semper mauris, vitae consequat eros tempor ac. Pellentesque et ornare sapien</p>
                 </div>
             </div>
         </div>
@@ -101,8 +110,10 @@
                             <p>maecenas feugiat ex purus, quis volutpat lacus placerat</p>
                         </header>
                         <hr />
-                        <p> Cras aliquet urna ut sapien tincidunt, quis malesuada elit facilisis. Vestibulum sit amet tortor velit. Nam elementum nibh a libero pharetra elementum. Maecenas feugiat ex purus, quis volutpat lacus placerat malesuada. Praesent
-                            in sem ex. Morbi mattis sapien pretium tellus venenatis, at egestas urna ornare.</p>
+                        <p> Cras aliquet urna ut sapien tincidunt, quis malesuada elit facilisis. Vestibulum sit amet tortor
+                            velit. Nam elementum nibh a libero pharetra elementum. Maecenas feugiat ex purus, quis volutpat
+                            lacus placerat malesuada. Praesent in sem ex. Morbi mattis sapien pretium tellus venenatis, at
+                            egestas urna ornare.</p>
                     </div>
                 </div>
             </div>
@@ -118,8 +129,10 @@
                             <p>mattis sapien pretium tellus venenatis</p>
                         </header>
                         <hr />
-                        <p> Cras aliquet urna ut sapien tincidunt, quis malesuada elit facilisis. Vestibulum sit amet tortor velit. Nam elementum nibh a libero pharetra elementum. Maecenas feugiat ex purus, quis volutpat lacus placerat malesuada. Praesent
-                            in sem ex. Morbi mattis sapien pretium tellus venenatis, at egestas urna ornare.</p>
+                        <p> Cras aliquet urna ut sapien tincidunt, quis malesuada elit facilisis. Vestibulum sit amet tortor
+                            velit. Nam elementum nibh a libero pharetra elementum. Maecenas feugiat ex purus, quis volutpat
+                            lacus placerat malesuada. Praesent in sem ex. Morbi mattis sapien pretium tellus venenatis, at
+                            egestas urna ornare.</p>
                     </div>
                 </div>
             </div>
@@ -134,8 +147,9 @@
 
         <header class="align-center">
             <h2>Morbi interdum mollis sapien</h2>
-            <p>Cras aliquet urna ut sapien tincidunt, quis malesuada elit facilisis. Vestibulum sit amet tortor velit. Nam elementum nibh a libero pharetra elementum. Maecenas feugiat ex purus, quis volutpat lacus placerat malesuada. Praesent in sem
-                ex. Morbi mattis sapien pretium tellus venenatis, at egestas urna ornare.</p>
+            <p>Cras aliquet urna ut sapien tincidunt, quis malesuada elit facilisis. Vestibulum sit amet tortor velit. Nam elementum
+                nibh a libero pharetra elementum. Maecenas feugiat ex purus, quis volutpat lacus placerat malesuada. Praesent
+                in sem ex. Morbi mattis sapien pretium tellus venenatis, at egestas urna ornare.</p>
         </header>
 
     </div>
